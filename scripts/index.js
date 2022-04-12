@@ -1,5 +1,5 @@
 const users = []
-lis = document.getElementById("div-li")
+const lis = document.getElementById("div-li")
 document.getElementById("form").addEventListener('submit', function(event) {
      event.preventDefault();
 
@@ -10,7 +10,7 @@ document.getElementById("form").addEventListener('submit', function(event) {
      }
 
      users.push(user)
-     string = `<p class = "name"> Nombre: ${user.name} </p> 
+     const string = `<p class = "name"> Nombre: ${user.name} </p> 
      <p class="email"> Email: ${user.email}</p>
      <p class ="password"> Password: ${user.password}</p>`
      const li = document.createElement("li");
