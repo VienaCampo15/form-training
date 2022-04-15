@@ -18,6 +18,8 @@ document.getElementById("form").addEventListener('submit', function(event) {
      console.log(users)
      
      lis.appendChild(li)
+
+     localStorage.setItem('users', JSON.stringify(users));
 })
 
 
